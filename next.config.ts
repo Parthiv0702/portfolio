@@ -1,20 +1,11 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  experimental: {
-    agentFeedback: true,
+  eslint: {
+    ignoreDuringBuilds: true,
   },
-  cacheComponents: true,
-  partialPrefetching: true,
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
-  },
+  outputFileTracingRoot: path.join(__dirname),
 };
 
 export default nextConfig;

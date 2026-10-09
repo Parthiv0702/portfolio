@@ -1,5 +1,70 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Folder Structure
+
+```text
+my-next-app/
+├── public/
+│   ├── assets/
+│   │   ├── images/
+│   │   │   ├── app_logo.jpg
+│   │   │   ├── no_image.png
+│   │   │   └── parthiv.jpeg
+│   │   └── favicon.ico
+│   └── cv/
+│       └── parthiv_jogadiya_resume.pdf
+├── src/
+│   ├── app/
+│   │   ├── about/
+│   │   │   ├── components/
+│   │   │   │   └── AboutPageContent.tsx
+│   │   │   └── page.tsx
+│   │   ├── components/
+│   │   │   ├── AboutSection.tsx
+│   │   │   ├── CVSection.tsx
+│   │   │   ├── ContactSection.tsx
+│   │   │   ├── EducationSection.tsx
+│   │   │   ├── ExperienceSection.tsx
+│   │   │   ├── HeroSection.tsx
+│   │   │   ├── ProjectsSection.tsx
+│   │   │   └── SkillsSection.tsx
+│   │   ├── projects/
+│   │   │   ├── components/
+│   │   │   │   └── ProjectsPageContent.tsx
+│   │   │   └── page.tsx
+│   │   ├── favicon.ico
+│   │   ├── layout.tsx
+│   │   ├── not-found.tsx
+│   │   ├── page.tsx
+│   │   ├── robots.ts
+│   │   └── sitemap.ts
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── AppIcon.tsx
+│   │   │   ├── AppImage.tsx
+│   │   │   ├── AppLogo.tsx
+│   │   │   └── ProfileImageFrame.tsx
+│   │   ├── Footer.tsx
+│   │   └── Header.tsx
+│   ├── data/
+│   │   ├── experience.ts
+│   │   ├── projects.ts
+│   │   └── skills.ts
+│   └── styles/
+│       ├── index.css
+│       └── tailwind.css
+├── .env
+├── .gitignore
+├── eslint.config.mjs
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── tsconfig.json
+```
+
 ## Getting Started
 
 First, run the development server:
