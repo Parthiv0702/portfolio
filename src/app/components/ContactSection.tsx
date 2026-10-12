@@ -69,8 +69,8 @@ export default function ContactSection() {
             icon: 'BriefcaseIcon',
             label: 'LinkedIn',
             // Replace with actual LinkedIn URL
-            value: 'linkedin.com/in/parthiv-jogadiya',
-            href: 'https://www.linkedin.com/in/parthiv-jogadiya',
+            value: 'linkedin.com/in/parthiv-jogadiya07',
+            href: 'https://www.linkedin.com/in/parthiv-jogadiya07',
         },
         {
             icon: 'MapPinIcon',
