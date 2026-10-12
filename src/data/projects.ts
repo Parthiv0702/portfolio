@@ -13,55 +13,76 @@ export interface Project {
 // NOTE: Replace with actual project data. All project details below are realistic placeholders.
 export const projects: Project[] = [
     {
-        id: 'task-management-app',
-        title: 'Task Management App',
-        shortDescription:
-            'A full-featured task management application built with Angular and TypeScript, featuring real-time updates and REST API integration.',
-        fullDescription:
-            'A comprehensive task management application that allows teams to create, assign, and track tasks efficiently. Built with Angular 17 and TypeScript, it features a clean dashboard interface, drag-and-drop task reordering, priority labeling, deadline tracking, and REST API integration with a Node.js backend. The application uses Angular\'s reactive forms for validation and RxJS for state management.',
-        technologies: ['Angular', 'TypeScript', 'REST API', 'SCSS', 'RxJS', 'Git'],
-        githubUrl: '#', // Replace with actual GitHub URL
-        liveUrl: null,
-        featured: true,
-        category: 'Web Application',
-    },
-    {
-        id: 'ecommerce-frontend',
-        title: 'E-Commerce Frontend',
-        shortDescription:
-            'A responsive e-commerce storefront built with Angular and SCSS, integrating product listing, cart, and checkout flows via REST APIs.',
-        fullDescription:
-            'A fully responsive e-commerce frontend application designed for seamless shopping experiences across all devices. Developed using Angular with SCSS for custom styling, the project features a dynamic product catalog with filtering and sorting, a persistent shopping cart using localStorage, a multi-step checkout flow, and REST API integration for product data and order management. Special attention was paid to performance optimization through lazy loading modules.',
-        technologies: ['Angular', 'TypeScript', 'SCSS', 'REST API', 'Git', 'Responsive Design'],
-        githubUrl: '#', // Replace with actual GitHub URL
-        liveUrl: null,
-        featured: true,
-        category: 'Web Application',
-    },
-    {
-        id: 'data-dashboard',
-        title: 'Analytics Dashboard',
-        shortDescription:
-            'An interactive data analytics dashboard built with Angular and TypeScript, visualizing data from a MongoDB-backed REST API.',
-        fullDescription:
-            'An analytics dashboard application for visualizing business metrics and data trends. Built with Angular and TypeScript, the dashboard integrates with a MongoDB-backed REST API to display real-time charts, data tables, and KPI widgets. Features include date range filtering, exportable reports, and a responsive layout that adapts to different screen sizes. The project uses Angular Material components alongside custom SCSS theming.',
-        technologies: ['Angular', 'TypeScript', 'MongoDB', 'REST API', 'SCSS', 'Charts'],
-        githubUrl: '#', // Replace with actual GitHub URL
-        liveUrl: null,
-        featured: false,
-        category: 'Data Visualization',
-    },
-    {
         id: 'portfolio-website',
         title: 'Portfolio Website',
         shortDescription:
-            'This portfolio website — designed and built with Next.js and TypeScript for fast performance and professional presentation.',
+            'A responsive personal portfolio built with Next.js to showcase professional experience, technical skills, and projects, with easy access to my CV.',
         fullDescription:
-            'A premium, dark-themed portfolio website built with Next.js 15 and TypeScript to showcase professional work, skills, and academic background. Features include a glassmorphism design system, smooth scroll animations with Intersection Observer, responsive layouts for all devices, SEO optimization with structured data, and a contact form. Built to serve as a professional presentation for both German university applications and potential employers.',
-        technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'CSS Animations', 'SEO'],
-        githubUrl: '#', // Replace with actual GitHub URL
-        liveUrl: '#', // Replace with actual live URL
+            'Designed and developed a personal portfolio website using Next.js to present my professional profile, technical expertise, work experience, and development projects. Created a clean, responsive, and user-friendly interface to ensure a consistent experience across different devices. Integrated access to my CV and deployed the website on Vercel to establish a professional online presence.',
+        technologies: ['Next.js', 'TypeScript', 'React', 'CSS', 'Vercel'],
+        githubUrl: '#', // Replace with your actual GitHub repository URL
+        liveUrl: 'https://parthiv-jogadiya-portfolio.vercel.app/',
         featured: true,
         category: 'Web Development',
+    },
+    {
+        id: 'project-management-system',
+        title: 'Project Management System (PMS)',
+        shortDescription:
+            'A full-stack project management application designed to organize projects, track tasks, monitor progress, and streamline team collaboration.',
+        fullDescription:
+            'Developed a Project Management System to simplify project organization, task tracking, and team collaboration. The application helps users manage projects, organize tasks, monitor progress, and maintain project-related information in one place. Built using Angular for the frontend and Node.js, Express.js, and MongoDB for the backend and data management. Focused on creating a responsive user interface and a structured workflow for efficient project management.',
+        technologies: [
+            'Angular',
+            'TypeScript',
+            'Node.js',
+            'Express.js',
+            'MongoDB',
+            'REST API',
+        ],
+        githubUrl: '#', // Replace with your actual GitHub repository URL
+        liveUrl: 'https://pms-workspace-hub.vercel.app/dashboard',
+        featured: true,
+        category: 'Full-Stack Web Application',
+    },
+    {
+        id: 'promoprep',
+        title: 'Promoprep',
+        shortDescription:
+            'A company-wide task and activity management platform featuring daily reminders, progress tracking, and downloadable performance reports.',
+        fullDescription:
+            'Contributed to the development of Promoprep, a task and activity management system designed to streamline daily business operations across different organizational levels. Developed major administrative functionalities using Angular, enabling users to manage activities, organize daily tasks, configure reminders, and monitor progress. The platform also supports company heads in reviewing activity performance, analyzing business growth, and downloading reports for specific months or years to support data-driven decision-making.',
+        technologies: [
+            'Angular',
+            'TypeScript',
+            'JavaScript',
+            'HTML',
+            'CSS',
+            'REST API',
+        ],
+        githubUrl: '#', // Private/company project, if applicable
+        liveUrl: 'https://promoprep.com/',
+        featured: true,
+        category: 'Enterprise Web Application',
+    },
+    {
+        id: 'launch-on-demand',
+        title: 'Launch On Demand',
+        shortDescription:
+            'An aerospace and commercial space services platform supporting launch operations, flight and marine functionality, and video capture features.',
+        fullDescription:
+            'Contributed to the development of Launch On Demand, a platform providing aerospace and commercial space services related to launch operations, regulatory licensing, mission management, and technical coordination. Worked as an Angular developer at Tagline Infotech LLP, developing flight-related and marine-related functionalities as well as video capture features across the project. Collaborated within the development workflow to implement project requirements and enhance the platform’s functionality.',
+        technologies: [
+            'Angular',
+            'TypeScript',
+            'JavaScript',
+            'HTML',
+            'CSS',
+            'REST API',
+        ],
+        githubUrl: '#', // Private/company project, if applicable
+        liveUrl: 'https://launchondemand.space/',
+        featured: true,
+        category: 'Aerospace Web Application',
     },
 ];
