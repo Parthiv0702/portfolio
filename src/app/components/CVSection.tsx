@@ -131,13 +131,6 @@ export default function CVSection() {
                                 Download CV (PDF)
                             </a>
                         </div>
-
-                        <div className="scroll-reveal-hidden glass-card rounded-2xl p-5 flex items-start gap-3">
-                            <Icon name="InformationCircleIcon" size={18} className="text-accent flex-shrink-0 mt-0.5" />
-                            <p className="text-muted-foreground text-xs leading-relaxed">
-                                Verified details exactly as provided in the CV: EQF Level 6 Bachelor of Computer Applications, Angular Developer at Digipace Technologies &amp; Tagline Infotech.
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
