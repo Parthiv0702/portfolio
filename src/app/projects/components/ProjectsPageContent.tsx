@@ -60,15 +60,17 @@ function ProjectDetailModal({ project, onClose }: { project: Project; onClose: (
                         </div>
                     )}
                     <div className="flex gap-3 flex-wrap">
-                        <a
-                            href={project.githubUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn-secondary flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium min-h-[44px]"
-                        >
-                            <Icon name="CodeBracketIcon" size={16} />
-                            GitHub
-                        </a>
+                        {project.githubUrl && (
+                            <a
+                                href={project.githubUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn-secondary flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium min-h-[44px]"
+                            >
+                                <Icon name="CodeBracketIcon" size={16} />
+                                GitHub
+                            </a>
+                        )}
                         {project.liveUrl && (
                             <a
                                 href={project.liveUrl}
@@ -217,15 +219,17 @@ export default function ProjectsPageContent() {
                                     <Icon name="ArrowRightIcon" size={14} />
                                 </button>
                                 <div className="flex items-center gap-2 ml-auto">
-                                    <a
-                                        href={project.githubUrl}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-white/5 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
-                                        aria-label={`GitHub for ${project.title}`}
-                                    >
-                                        <Icon name="CodeBracketIcon" size={18} />
-                                    </a>
+                                    {project.githubUrl && (
+                                        <a
+                                            href={project.githubUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-white/5 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+                                            aria-label={`GitHub for ${project.title}`}
+                                        >
+                                            <Icon name="CodeBracketIcon" size={18} />
+                                        </a>
+                                    )}
                                     {project.liveUrl && (
                                         <a
                                             href={project.liveUrl}

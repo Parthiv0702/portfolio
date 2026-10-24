@@ -5,7 +5,7 @@ export interface Project {
     shortDescription: string;
     fullDescription: string;
     technologies: string[];
-    githubUrl: string;
+    githubUrl: string | null;
     liveUrl: string | null;
     featured: boolean;
     category: string;
@@ -21,7 +21,7 @@ export const projects: Project[] = [
         fullDescription:
             'Designed and developed a personal portfolio website using Next.js to showcase my technical skills, professional experience, and projects. Created a clean, responsive, and user-friendly interface to present my work and make my CV easily accessible. Deployed the website on Vercel to establish a professional online presence and demonstrate my web development capabilities.',
         technologies: ['Next.js', 'ReactJs', 'TypeScript', 'CSS', 'HTML', 'Vercel'],
-        githubUrl: 'https://github.com/Parthiv0702',
+        githubUrl: null,
         liveUrl: 'https://parthiv-jogadiya-portfolio.vercel.app/',
         featured: true,
         category: 'Web Development',
@@ -42,7 +42,7 @@ export const projects: Project[] = [
             'MongoDB',
             'REST API',
         ],
-        githubUrl: 'https://github.com/Parthiv0702',
+        githubUrl: null,
         liveUrl: 'https://pms-workspace-hub.vercel.app/auth/login',
         featured: true,
         category: 'Full-Stack Web Application',
@@ -63,7 +63,7 @@ export const projects: Project[] = [
             'SQLite',
         ],
         githubUrl: 'https://github.com/utsavbhesaniya2005/CarrerNavigator',
-        liveUrl: 'https://github.com/utsavbhesaniya2005/CarrerNavigator',
+        liveUrl: null,
         featured: true,
         category: 'Major Project / Web Application',
     },
@@ -83,7 +83,7 @@ export const projects: Project[] = [
             'CSS',
             'REST API',
         ],
-        githubUrl: 'https://github.com/Parthiv0702',
+        githubUrl: null,
         liveUrl: 'https://launchondemand.space/',
         featured: true,
         category: 'Commercial Web Application',
