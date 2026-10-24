@@ -67,11 +67,13 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
                         </div>
                     </div>
 
-                    {/* Note */}
-                    <div className="bg-primary/5 border border-primary/10 rounded-xl p-4 mb-6 text-xs text-muted-foreground">
-                        <strong className="text-foreground">Note:</strong> This is a representative placeholder project. Actual project details can be updated in{' '}
-                        <code className="text-accent">/src/data/projects.ts</code>.
-                    </div>
+                    {/* Date */}
+                    {project.date && (
+                        <div className="flex items-center gap-2 text-muted-foreground text-xs mb-6">
+                            <Icon name="CalendarDaysIcon" size={14} className="text-primary" />
+                            <span>{project.date}</span>
+                        </div>
+                    )}
 
                     {/* Actions */}
                     <div className="flex gap-3 flex-wrap">
@@ -179,9 +181,15 @@ export default function ProjectsSection() {
                             </div>
 
                             {/* Title + Description */}
-                            <h3 className="text-foreground font-bold text-lg mb-2 group-hover:text-primary transition-colors duration-200">
+                            <h3 className="text-foreground font-bold text-lg mb-1 group-hover:text-primary transition-colors duration-200">
                                 {project.title}
                             </h3>
+                            {project.date && (
+                                <p className="text-muted-foreground text-xs mb-3 flex items-center gap-1.5">
+                                    <Icon name="CalendarDaysIcon" size={13} />
+                                    <span>{project.date}</span>
+                                </p>
+                            )}
                             <p className="text-foreground-secondary text-sm leading-relaxed mb-5 flex-1">
                                 {project.shortDescription}
                             </p>

@@ -12,12 +12,12 @@ import ContactSection from '@/app/components/ContactSection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Parthiv Jogadiya — Angular Developer & CS Graduate',
+    title: 'Parthiv Jogadiya — Angular Developer & BCA Graduate',
     description:
-        'Portfolio of Parthiv Jogadiya — Angular Developer and BCA graduate from Surat, India, preparing for a Master\'s in Computer Science in Germany.',
+        'Portfolio of Parthiv Jogadiya — Angular Developer at Digipace Technologies Pvt. Ltd., formerly at Tagline Infotech LLP, and BCA graduate from Veer Narmad South Gujarat University.',
     openGraph: {
         title: 'Parthiv Jogadiya — Angular Developer',
-        description: 'BCA graduate and Angular Developer preparing for MS in CS in Germany.',
+        description: 'Angular Developer at Digipace Technologies and BCA graduate.',
         images: [{ url: '/assets/images/app_logo.jpg', width: 1200, height: 630 }],
     },
 };

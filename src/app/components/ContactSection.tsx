@@ -54,28 +54,31 @@ export default function ContactSection() {
         {
             icon: 'EnvelopeIcon',
             label: 'Email',
-            // Replace with actual email address
-            value: 'parthivjogadiya12@gmail.com',
-            href: 'mailto:parthivjogadiya12@gmail.com',
+            value: 'jogadiyaparthiv12@gmail.com',
+            href: 'mailto:jogadiyaparthiv12@gmail.com',
         },
         {
-            icon: 'CodeBracketIcon',
-            label: 'GitHub',
-            // Replace with actual GitHub URL
-            value: 'github.com/Parthiv0702',
-            href: 'https://github.com/Parthiv0702',
+            icon: 'GlobeAltIcon',
+            label: 'Website',
+            value: 'parthiv-jogadiya-portfolio.vercel.app',
+            href: 'https://parthiv-jogadiya-portfolio.vercel.app/',
         },
         {
             icon: 'BriefcaseIcon',
             label: 'LinkedIn',
-            // Replace with actual LinkedIn URL
-            value: 'linkedin.com/in/parthiv-jogadiya07',
+            value: 'Parthiv Jogadiya',
             href: 'https://www.linkedin.com/in/parthiv-jogadiya07',
+        },
+        {
+            icon: 'CodeBracketIcon',
+            label: 'GitHub',
+            value: 'github.com/Parthiv0702',
+            href: 'https://github.com/Parthiv0702',
         },
         {
             icon: 'MapPinIcon',
             label: 'Location',
-            value: 'Surat, Gujarat, India',
+            value: 'Surat, India',
             href: null,
         },
     ];

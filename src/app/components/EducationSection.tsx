@@ -6,20 +6,20 @@ import Icon from '@/components/ui/AppIcon';
 
 const curriculumAreas = [
     {
-        area: 'Programming & Software Development',
-        subjects: ['Programming Methodology', 'Java', '.NET', 'Unix & Shell Programming', 'Software Engineering'],
+        area: 'Computer Programming & Software Development',
+        subjects: ['Programming Methodology', 'Programming Skills', 'Java', '.NET', 'Unix & Shell Programming', 'Software Engineering'],
     },
     {
         area: 'Data & Databases',
-        subjects: ['OOP & Data Structures', 'RDBMS', 'Database Handling with Python', 'Information Systems'],
+        subjects: ['Object-Oriented Programming & Data Structures', 'RDBMS', 'Data Manipulation & Analysis', 'Database Handling using Python', 'Information Systems'],
     },
     {
         area: 'Web Technologies',
-        subjects: ['Web Designing', 'Advanced Web Designing', 'Web Framework & Services', 'ASP.NET'],
+        subjects: ['Web Designing-II', 'Advanced Web Designing', 'Web Framework & Services', 'ASP.NET'],
     },
     {
         area: 'Computer Systems',
-        subjects: ['Operating Systems', 'Network Technologies', 'Computer Graphics'],
+        subjects: ['Operating Systems-I', 'Network Technologies', 'Computer Graphics'],
     },
     {
         area: 'Emerging Technologies',
@@ -63,7 +63,7 @@ export default function EducationSection() {
         >
             <div className="max-w-5xl mx-auto">
                 <div className="scroll-reveal-hidden mb-12">
-                    <span className="section-label">Education</span>
+                    <span className="section-label">Education &amp; Training</span>
                     <h2 id="education-heading" className="text-section-heading text-foreground mt-2">
                         Academic <span className="text-gradient-blue">Background</span>
                     </h2>
@@ -78,7 +78,7 @@ export default function EducationSection() {
                             </div>
                             <div>
                                 <h3 className="text-foreground font-bold text-xl">Bachelor of Computer Applications</h3>
-                                <p className="text-accent font-semibold mt-1">Veer Narmad South Gujarat University</p>
+                                <p className="text-accent font-semibold mt-1">Veer Narmad South Gujrat University</p>
                                 <div className="flex items-center gap-2 mt-1.5 text-muted-foreground text-sm flex-wrap">
                                     <Icon name="MapPinIcon" size={13} />
                                     <span>Surat, India</span>
@@ -89,7 +89,7 @@ export default function EducationSection() {
                         </div>
                         <div className="flex items-center gap-2 text-muted-foreground text-sm flex-shrink-0">
                             <Icon name="CalendarDaysIcon" size={14} />
-                            <span>July 2022 — May 2025</span>
+                            <span>01/07/2022 — 31/05/2025</span>
                         </div>
                     </div>
 
@@ -119,29 +119,41 @@ export default function EducationSection() {
                     <div className="mt-6 flex items-center gap-3 p-4 rounded-xl bg-primary/5 border border-primary/10">
                         <Icon name="DocumentTextIcon" size={18} className="text-primary flex-shrink-0" />
                         <p className="text-sm text-foreground-secondary">
-                            Completed a <strong className="text-foreground">Major Project</strong> as part of the BCA program, applying software engineering concepts in a practical setting.
+                            Practical Experience: <strong className="text-foreground">Major Project</strong> — completed Career Guidance System as final-year major project during BCA.
                         </p>
                     </div>
                 </div>
 
-                {/* Future Education Goal */}
+                {/* Soft Skills & Professional Competencies */}
                 <div className="scroll-reveal-hidden glass-card rounded-2xl p-6 sm:p-8 border border-primary/10">
                     <div className="flex items-start gap-4">
                         <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                            <Icon name="GlobeAltIcon" size={20} className="text-primary" />
+                            <Icon name="SparklesIcon" size={20} className="text-primary" />
                         </div>
-                        <div>
-                            <div className="flex items-center gap-2 flex-wrap">
-                                <h3 className="text-foreground font-bold text-lg">Next Step: Master's in Computer Science</h3>
+                        <div className="flex-1">
+                            <div className="flex items-center gap-2 flex-wrap mb-2">
+                                <h3 className="text-foreground font-bold text-lg">Soft Skills &amp; Professional Competencies</h3>
                                 <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-accent/10 text-accent border border-accent/20">
-                                    In Progress
+                                    From CV
                                 </span>
                             </div>
-                            <p className="text-accent font-semibold text-sm mt-1">Germany — Target 2026</p>
-                            <p className="text-foreground-secondary text-sm leading-relaxed mt-3">
-                                Currently preparing applications for Master's programs in Computer Science at German universities.
-                                Focused on programs with strong AI, machine learning, and software engineering tracks.
+                            <p className="text-foreground-secondary text-sm leading-relaxed mb-4">
+                                Key interpersonal and professional soft skills developed throughout academic training and industry experience:
                             </p>
+                            <div className="flex flex-wrap gap-2">
+                                {[
+                                    'Communication',
+                                    'Problem-Solving',
+                                    'Think Critically',
+                                    'Work as a Team',
+                                    'Adapt to Change',
+                                    'Time Management',
+                                ].map((skill) => (
+                                    <span key={skill} className="tech-badge">
+                                        {skill}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -84,7 +84,7 @@ export default function HeroSection() {
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8 animate-fade-in-up stagger-1">
                     <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                    <span className="section-label">Available for Opportunities · Surat, India</span>
+                    <span className="section-label">Angular Developer · Surat &amp; Vadodara, India</span>
                 </div>
 
                 {/* Headline */}
@@ -95,14 +95,12 @@ export default function HeroSection() {
 
                 {/* Subtitle */}
                 <p className="text-base sm:text-lg font-semibold tracking-widest text-muted-foreground uppercase mb-6 animate-fade-in-up stagger-3">
-                    Angular Developer&nbsp;&nbsp;·&nbsp;&nbsp;Software Developer&nbsp;&nbsp;·&nbsp;&nbsp;Aspiring AI Specialist
+                    Angular Developer&nbsp;&nbsp;·&nbsp;&nbsp;BCA Graduate&nbsp;&nbsp;·&nbsp;&nbsp;Web Developer
                 </p>
 
                 {/* Description */}
                 <p className="max-w-2xl mx-auto text-base sm:text-lg text-muted-foreground leading-relaxed mb-10 animate-fade-in-up stagger-4">
-                    BCA graduate with hands-on Angular development experience at Tagline Infotech LLP, Surat.
-                    Passionate about building performant web applications and preparing for a Master's in Computer Science
-                    in Germany with a focus on AI technologies.
+                    Angular Developer at Digipace Technologies Pvt. Ltd. and BCA graduate from Veer Narmad South Gujarat University. Experienced in developing responsive web applications, reusable UI components, and REST API integrations with prior development experience at Tagline Infotech LLP.
                 </p>
 
                 {/* CTAs */}
@@ -133,7 +131,7 @@ export default function HeroSection() {
 
                 {/* Tech Stack Row */}
                 <div className="mt-14 flex flex-wrap items-center justify-center gap-2 animate-fade-in-up stagger-6">
-                    {['Angular', 'TypeScript', 'JavaScript', 'REST APIs', 'Git', 'SCSS'].map((tech) => (
+                    {['Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'SCSS', 'ReactJs', 'Next.js', 'Git'].map((tech) => (
                         <span key={tech} className="tech-badge">
                             {tech}
                         </span>

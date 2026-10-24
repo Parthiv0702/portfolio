@@ -23,10 +23,9 @@ export default function Footer() {
                             <span className="font-bold text-foreground text-sm">Parthiv Jogadiya</span>
                         </div>
                         <p className="text-muted-foreground text-sm leading-relaxed">
-                            Angular Developer · Software Developer · Aspiring AI Specialist
+                            Angular Developer · BCA Graduate
                         </p>
                         <div className="flex items-center gap-4 mt-2">
-                            {/* GitHub — replace href with actual URL */}
                             <a
                                 href="https://github.com/Parthiv0702"
                                 target="_blank"
@@ -36,9 +35,8 @@ export default function Footer() {
                             >
                                 <Icon name="CodeBracketIcon" size={18} />
                             </a>
-                            {/* LinkedIn — replace href with actual URL */}
                             <a
-                                href="https://linkedin.com/in/parthiv-jogadiya"
+                                href="https://www.linkedin.com/in/parthiv-jogadiya07"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="LinkedIn"
@@ -46,9 +44,8 @@ export default function Footer() {
                             >
                                 <Icon name="BriefcaseIcon" size={18} />
                             </a>
-                            {/* Email — replace with actual email */}
                             <a
-                                href="mailto:parthivjogadiya12@gmail.com"
+                                href="mailto:jogadiyaparthiv12@gmail.com"
                                 aria-label="Email"
                                 className="text-muted-foreground hover:text-foreground transition-colors duration-200 p-1"
                             >

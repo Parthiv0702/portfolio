@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'About — Parthiv Jogadiya',
     description:
-        'Learn about Parthiv Jogadiya — his background, education, languages, and goals for a Master\'s in Computer Science in Germany.',
+        'Learn about Parthiv Jogadiya — Angular Developer at Digipace Technologies Pvt. Ltd., BCA graduate from Veer Narmad South Gujarat University, work experience, education, and skills.',
 };
 
 export default function AboutPage() {

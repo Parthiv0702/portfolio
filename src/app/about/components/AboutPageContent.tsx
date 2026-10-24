@@ -7,15 +7,31 @@ import ProfileImageFrame from '@/components/ui/ProfileImageFrame';
 
 const languages = [
     { name: 'Gujarati', level: 'Mother Tongue', proficiency: 'Native' },
-    { name: 'English', level: 'Professional Working', proficiency: 'Fluent' },
-    { name: 'Hindi', level: 'Professional Working', proficiency: 'Fluent' },
+    { name: 'English', level: 'Other Language', proficiency: 'Fluent' },
+    { name: 'Hindi', level: 'Other Language', proficiency: 'Fluent' },
 ];
 
-const interests = [
-    { icon: 'CodeBracketIcon', label: 'Software Development', desc: 'Building clean, performant web applications with modern frameworks' },
-    { icon: 'CpuChipIcon', label: 'Artificial Intelligence', desc: 'Interest in ML, deep learning, and AI-driven software systems' },
-    { icon: 'GlobeAltIcon', label: 'International Education', desc: 'Pursuing academic excellence in Germany\'s top CS programs' },
-    { icon: 'PuzzlePieceIcon', label: 'Problem Solving', desc: 'Tackling complex technical challenges with structured thinking' },
+const hobbiesAndInterests = [
+    {
+        icon: 'TrophyIcon',
+        label: 'Esports and Gaming',
+        desc: 'Enjoy playing video games, exploring gaming strategies, and following competitive esports.',
+    },
+    {
+        icon: 'GlobeAltIcon',
+        label: 'Travelling',
+        desc: 'Enjoy exploring new places, experiencing different cultures, and discovering new destinations.',
+    },
+    {
+        icon: 'VideoCameraIcon',
+        label: 'Content Creation',
+        desc: 'Enjoy making content around gaming and lifestyle.',
+    },
+    {
+        icon: 'SparklesIcon',
+        label: 'Soft Skills',
+        desc: 'Communication, problem-solving, critical thinking, teamwork, adaptability, and time management.',
+    },
 ];
 
 export default function AboutPageContent() {
@@ -55,7 +71,7 @@ export default function AboutPageContent() {
                             Parthiv <span className="text-gradient-blue">Jogadiya</span>
                         </h1>
                         <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed">
-                            Angular Developer · BCA Graduate · Aspiring AI Specialist · Surat, India
+                            Angular Developer · BCA Graduate · Surat &amp; Vadodara, India
                         </p>
                     </div>
                 </section>
@@ -66,56 +82,74 @@ export default function AboutPageContent() {
                         <div className="lg:col-span-2 space-y-5">
                             <div className="scroll-reveal-hidden glass-card rounded-2xl p-7">
                                 <h2 className="text-foreground font-bold text-xl mb-4 flex items-center gap-2">
-                                    <Icon name="UserCircleIcon" size={22} className="text-primary" />
-                                    Background
+                                    <Icon name="AcademicCapIcon" size={22} className="text-primary" />
+                                    Education &amp; Training
                                 </h2>
                                 <p className="text-foreground-secondary leading-relaxed text-sm sm:text-base mb-4">
-                                    I was born on 7 December 2004 in Surat, India — a city known for its industrial energy
-                                    and growing technology sector. I completed my Bachelor of Computer Applications (BCA) at
-                                    Veer Narmad South Gujarat University between July 2022 and May 2025, earning an EQF Level 6
-                                    qualification.
+                                    I completed my Bachelor of Computer Applications (BCA) at Veer Narmad South Gujrat University [ 01/07/2022 – 31/05/2025 ] in Surat, India, earning an EQF Level 6 qualification.
                                 </p>
-                                <p className="text-foreground-secondary leading-relaxed text-sm sm:text-base">
-                                    My undergraduate studies gave me a broad foundation in computer science — from programming
-                                    fundamentals and data structures to web technologies, databases, operating systems, and
-                                    networking. The Major Project component allowed me to apply these skills in a structured,
-                                    real-world context.
+                                <p className="text-foreground-secondary leading-relaxed text-sm sm:text-base mb-3">
+                                    My academic coursework spanned:
                                 </p>
+                                <ul className="text-foreground-secondary text-sm space-y-1.5 list-disc pl-5">
+                                    <li><strong className="text-foreground">Computer Programming &amp; Software Development:</strong> Programming Methodology, Programming Skills, Java, .NET, Unix &amp; Shell Programming, Software Engineering.</li>
+                                    <li><strong className="text-foreground">Data &amp; Databases:</strong> Object-Oriented Programming &amp; Data Structures, RDBMS, Data Manipulation &amp; Analysis, Database Handling using Python, Information Systems.</li>
+                                    <li><strong className="text-foreground">Web Technologies:</strong> Web Designing-II, Advanced Web Designing, Web Framework &amp; Services, ASP.NET.</li>
+                                    <li><strong className="text-foreground">Computer Systems:</strong> Operating Systems-I, Network Technologies, Computer Graphics.</li>
+                                    <li><strong className="text-foreground">Emerging Technologies:</strong> Internet of Things (IoT), E-Commerce &amp; Cyber Security.</li>
+                                    <li><strong className="text-foreground">Mathematics &amp; Statistics:</strong> Mathematics, Statistical Methods.</li>
+                                </ul>
                             </div>
 
                             <div className="scroll-reveal-hidden glass-card rounded-2xl p-7">
                                 <h2 className="text-foreground font-bold text-xl mb-4 flex items-center gap-2">
                                     <Icon name="BriefcaseIcon" size={22} className="text-primary" />
-                                    Professional Experience
+                                    Work Experience
                                 </h2>
-                                <p className="text-foreground-secondary leading-relaxed text-sm sm:text-base mb-4">
-                                    Since January 2025, I have been working at Tagline Infotech LLP in Surat — first as an
-                                    Angular Developer Intern (January–June 2025) and subsequently as an Angular Developer
-                                    (July 2025 onwards). This experience has been formative: I work daily with Angular 17 and
-                                    TypeScript, building and maintaining responsive web applications, integrating REST APIs,
-                                    and collaborating in a professional development team.
-                                </p>
-                                <p className="text-foreground-secondary leading-relaxed text-sm sm:text-base">
-                                    The role has strengthened my understanding of component architecture, reactive programming
-                                    with RxJS, version control workflows with Git, and the practical realities of delivering
-                                    software in a professional environment.
-                                </p>
+                                <div className="space-y-4">
+                                    <div>
+                                        <div className="flex justify-between items-center flex-wrap">
+                                            <h3 className="text-foreground font-semibold text-base">Angular Developer</h3>
+                                            <span className="text-xs text-primary font-medium">01/07/2026 – Current</span>
+                                        </div>
+                                        <p className="text-accent text-xs font-medium">Digipace Technologies Pvt. Ltd. – Vadodara, India</p>
+                                        <p className="text-foreground-secondary text-sm leading-relaxed mt-2">
+                                            Working as an Angular Developer since 1 July 2026. Developing and maintaining web application features using various technologies. Responsibilities include building responsive user interfaces, integrating REST APIs, debugging and resolving issues, testing application functionality, and collaborating with senior developers to improve code quality and application performance.
+                                        </p>
+                                    </div>
+                                    <div className="border-t border-white/5 pt-4">
+                                        <div className="flex justify-between items-center flex-wrap">
+                                            <h3 className="text-foreground font-semibold text-base">Angular Developer</h3>
+                                            <span className="text-xs text-muted-foreground">01/07/2025 – 30/06/2026</span>
+                                        </div>
+                                        <p className="text-accent text-xs font-medium">Tagline Infotech LLP – Surat, India</p>
+                                        <p className="text-foreground-secondary text-sm leading-relaxed mt-2">
+                                            Developed and maintained responsive web applications using Angular and TypeScript. Designed and implemented reusable UI components, integrated REST APIs, handled application functionality and bug fixing, and worked with Git for version control. Collaborated with team members to implement new features, improve application performance, and resolve technical issues.
+                                        </p>
+                                    </div>
+                                    <div className="border-t border-white/5 pt-4">
+                                        <div className="flex justify-between items-center flex-wrap">
+                                            <h3 className="text-foreground font-semibold text-base">Angular Developer Intern</h3>
+                                            <span className="text-xs text-muted-foreground">01/01/2025 – 30/06/2025</span>
+                                        </div>
+                                        <p className="text-accent text-xs font-medium">Tagline Infotech LLP – Surat, India</p>
+                                        <p className="text-foreground-secondary text-sm leading-relaxed mt-2">
+                                            Learned about basics and advance fundamentals of Angular with many additional essential soft skills.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
 
                             <div className="scroll-reveal-hidden glass-card rounded-2xl p-7">
                                 <h2 className="text-foreground font-bold text-xl mb-4 flex items-center gap-2">
-                                    <Icon name="RocketLaunchIcon" size={22} className="text-primary" />
-                                    Future Goals
+                                    <Icon name="DocumentCheckIcon" size={22} className="text-primary" />
+                                    Practical Experience &amp; Projects
                                 </h2>
-                                <p className="text-foreground-secondary leading-relaxed text-sm sm:text-base mb-4">
-                                    My long-term ambition is to become a software engineer specializing in AI and machine
-                                    learning technologies. I believe that the intersection of strong software engineering
-                                    fundamentals and AI expertise is where the most impactful work of the next decade will happen.
+                                <p className="text-foreground-secondary leading-relaxed text-sm sm:text-base mb-3">
+                                    Completed a <strong className="text-foreground">Major Project</strong> as part of the BCA curriculum — the <strong>Career Guidance System</strong>, built using HTML, CSS, JavaScript, Python (Flask), and SQLite to help students connect with career counsellors, book appointments, and access career resources.
                                 </p>
                                 <p className="text-foreground-secondary leading-relaxed text-sm sm:text-base">
-                                    To pursue this goal, I am currently preparing applications for Master's programs in Computer Science at universities in Germany. Germany's reputation for rigorous engineering
-                                    education, its strong research output in AI, and the international environment of its
-                                    universities make it the right destination for this next stage of my development.
+                                    Also contributed to industry projects such as <strong>Launch On Demand</strong> (aerospace and spaceport services) at Tagline Infotech LLP, as well as independent full-stack applications including a <strong>Project Management System (PMS)</strong> and personal portfolio.
                                 </p>
                             </div>
                         </div>
@@ -132,11 +166,12 @@ export default function AboutPageContent() {
                                 <h3 className="text-foreground font-bold text-base mb-4">Personal Details</h3>
                                 <div className="space-y-3 text-sm">
                                     {[
-                                        { label: 'Full Name', value: 'Parthiv Jogadiya' },
-                                        { label: 'Date of Birth', value: '07 December 2004' },
+                                        { label: 'Name', value: 'Parthiv Jogadiya' },
                                         { label: 'Nationality', value: 'Indian' },
-                                        { label: 'Location', value: 'Surat, India' },
-                                        { label: 'Postal Code', value: '395004' },
+                                        { label: 'Date of Birth', value: '07/12/2004' },
+                                        { label: 'Place of Birth', value: 'Surat, India' },
+                                        { label: 'Email', value: 'jogadiyaparthiv12@gmail.com' },
+                                        { label: 'LinkedIn', value: 'Parthiv Jogadiya' },
                                     ].map((item) => (
                                         <div key={item.label} className="flex flex-col gap-0.5">
                                             <span className="text-muted-foreground text-xs font-medium uppercase tracking-wider">{item.label}</span>
@@ -150,7 +185,7 @@ export default function AboutPageContent() {
                             <div className="scroll-reveal-hidden glass-card rounded-2xl p-6">
                                 <h3 className="text-foreground font-bold text-base mb-4 flex items-center gap-2">
                                     <Icon name="LanguageIcon" size={18} className="text-primary" />
-                                    Languages
+                                    Language Skills
                                 </h3>
                                 <div className="space-y-3">
                                     {languages.map((lang) => (
@@ -199,13 +234,14 @@ export default function AboutPageContent() {
                     </div>
                 </section>
 
-                {/* Interests */}
+                {/* Hobbies and Interests */}
                 <section className="py-12">
                     <div className="scroll-reveal-hidden mb-8">
-                        <h2 className="text-foreground font-bold text-2xl">Interests &amp; Focus Areas</h2>
+                        <span className="section-label">Lifestyle &amp; Interests</span>
+                        <h2 className="text-foreground font-bold text-2xl mt-1">Hobbies and Interests</h2>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                        {interests.map((item, i) => (
+                        {hobbiesAndInterests.map((item, i) => (
                             <div
                                 key={item.label}
                                 className="scroll-reveal-hidden glass-card rounded-xl p-5 card-hover flex items-start gap-4"
@@ -228,7 +264,7 @@ export default function AboutPageContent() {
                     <div className="scroll-reveal-hidden glass-card rounded-2xl p-8 sm:p-10 text-center border border-primary/10">
                         <h2 className="text-foreground font-bold text-2xl mb-3">Interested in Working Together?</h2>
                         <p className="text-muted-foreground text-sm mb-7 max-w-md mx-auto">
-                            Open to collaborations, academic discussions, and professional opportunities.
+                            Open to collaborations, engineering discussions, and professional opportunities.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-3 justify-center">
                             <Link

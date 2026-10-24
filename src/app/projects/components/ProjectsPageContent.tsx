@@ -52,10 +52,13 @@ function ProjectDetailModal({ project, onClose }: { project: Project; onClose: (
                             ))}
                         </div>
                     </div>
-                    <div className="bg-primary/5 border border-primary/10 rounded-xl p-4 mb-6 text-xs text-muted-foreground">
-                        <strong className="text-foreground">Note:</strong> Placeholder project. Update data in{' '}
-                        <code className="text-accent">/src/data/projects.ts</code>
-                    </div>
+                    {/* Date */}
+                    {project.date && (
+                        <div className="flex items-center gap-2 text-muted-foreground text-xs mb-6">
+                            <Icon name="CalendarDaysIcon" size={14} className="text-primary" />
+                            <span>{project.date}</span>
+                        </div>
+                    )}
                     <div className="flex gap-3 flex-wrap">
                         <a
                             href={project.githubUrl}
@@ -134,9 +137,7 @@ export default function ProjectsPageContent() {
                         All <span className="text-gradient-blue">Projects</span>
                     </h1>
                     <p className="text-muted-foreground mt-3 max-w-xl text-sm sm:text-base">
-                        A collection of software development projects built with Angular, TypeScript, and related technologies.
-                        All items are representative placeholders — update via{' '}
-                        <code className="text-accent text-xs">/src/data/projects.ts</code>.
+                        A collection of software development projects built with Angular, Next.js, TypeScript, and related technologies, as documented in my CV.
                     </p>
                 </div>
 
@@ -186,9 +187,15 @@ export default function ProjectsPageContent() {
                                 </div>
                             </div>
 
-                            <h2 className="text-foreground font-bold text-lg mb-2 group-hover:text-primary transition-colors duration-200">
+                            <h2 className="text-foreground font-bold text-lg mb-1 group-hover:text-primary transition-colors duration-200">
                                 {project.title}
                             </h2>
+                            {project.date && (
+                                <p className="text-muted-foreground text-xs mb-3 flex items-center gap-1.5">
+                                    <Icon name="CalendarDaysIcon" size={13} />
+                                    <span>{project.date}</span>
+                                </p>
+                            )}
                             <p className="text-foreground-secondary text-sm leading-relaxed mb-5 flex-1">
                                 {project.shortDescription}
                             </p>

@@ -6,9 +6,9 @@ import ProfileImageFrame from '@/components/ui/ProfileImageFrame';
 
 const highlights = [
     { icon: 'AcademicCapIcon', label: 'BCA Graduate', value: 'Veer Narmad South Gujarat University' },
-    { icon: 'MapPinIcon', label: 'Based In', value: 'Surat, India' },
-    { icon: 'LanguageIcon', label: 'Languages', value: 'Gujarati, English, Hindi' },
-    { icon: 'GlobeAltIcon', label: 'Goal', value: 'MS in CS — Germany' },
+    { icon: 'BriefcaseIcon', label: 'Current Role', value: 'Angular Developer — Digipace Technologies' },
+    { icon: 'MapPinIcon', label: 'Based In', value: 'Surat & Vadodara, India' },
+    { icon: 'LanguageIcon', label: 'Languages', value: 'Gujarati (Native), English, Hindi' },
 ];
 
 export default function AboutSection() {
@@ -46,7 +46,7 @@ export default function AboutSection() {
                     <span className="section-label">About Me</span>
                     <h2 id="about-heading" className="text-section-heading text-foreground mt-2">
                         Building Software,{' '}
-                        <span className="text-gradient-blue">Shaping the Future</span>
+                        <span className="text-gradient-blue">Crafting Experiences</span>
                     </h2>
                 </div>
 
@@ -64,39 +64,32 @@ export default function AboutSection() {
                                 Who I Am
                             </h3>
                             <p className="text-foreground-secondary leading-relaxed text-base">
-                                I am a BCA graduate from Veer Narmad South Gujarat University, Surat, with a genuine
-                                passion for software development and building things that work well. My journey into
-                                programming began during my undergraduate studies, where I developed a strong foundation
-                                across computer science fundamentals — from data structures and algorithms to web
-                                technologies and databases.
+                                I am a Bachelor of Computer Applications (BCA) graduate from Veer Narmad South Gujarat University, Surat, India, holding an EQF Level 6 qualification. Born in Surat on 7 December 2004, I have developed a solid foundation in computer programming, software engineering, web technologies, and database management systems.
                             </p>
                         </div>
 
                         <div className="scroll-reveal-hidden glass-card rounded-2xl p-7">
                             <h3 className="text-foreground font-bold text-xl mb-3 flex items-center gap-2">
                                 <Icon name="BriefcaseIcon" size={22} className="text-primary" />
-                                Current Work
+                                Professional Journey
                             </h3>
+                            <p className="text-foreground-secondary leading-relaxed text-base mb-3">
+                                Currently working as an Angular Developer at Digipace Technologies Pvt. Ltd. (Vadodara, India) since 1 July 2026, developing and maintaining web application features, building responsive user interfaces, integrating REST APIs, debugging, and collaborating to improve code quality.
+                            </p>
                             <p className="text-foreground-secondary leading-relaxed text-base">
-                                Currently working as an Angular Developer at Tagline Infotech LLP, I build and maintain
-                                responsive web applications using Angular and TypeScript. I focus on writing clean,
-                                reusable code and have hands-on experience integrating REST APIs, managing version
-                                control with Git, and collaborating in team environments.
+                                Prior to this, I worked at Tagline Infotech LLP (Surat, India) as an Angular Developer and Angular Developer Intern, building responsive web apps with Angular and TypeScript, designing reusable UI components, and managing version control with Git.
                             </p>
                         </div>
 
                         <div className="scroll-reveal-hidden glass-card rounded-2xl p-7">
                             <div className="flex items-start gap-3">
                                 <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <Icon name="RocketLaunchIcon" size={18} className="text-primary" />
+                                    <Icon name="SparklesIcon" size={18} className="text-primary" />
                                 </div>
                                 <div>
-                                    <p className="text-foreground font-semibold text-lg mb-1.5">Looking Ahead</p>
+                                    <p className="text-foreground font-semibold text-lg mb-1.5">Hobbies &amp; Interests</p>
                                     <p className="text-foreground-secondary leading-relaxed text-base">
-                                        My long-term goal is to become a software engineer specializing in AI-related
-                                        technologies. I am currently preparing applications for Master's programs in
-                                        Computer Science at universities in Germany — a country known for its rigorous
-                                        engineering education and strong research culture in AI.
+                                        Outside of programming, I enjoy competitive esports and gaming (exploring gaming strategies), travelling (exploring new places and experiencing different cultures), and content creation around gaming and lifestyle.
                                     </p>
                                 </div>
                             </div>
