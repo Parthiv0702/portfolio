@@ -6,9 +6,9 @@ import ProfileImageFrame from '@/components/ui/ProfileImageFrame';
 
 const highlights = [
     { icon: 'AcademicCapIcon', label: 'BCA Graduate', value: 'Veer Narmad South Gujarat University' },
-    { icon: 'BriefcaseIcon', label: 'Current Role', value: 'Angular Developer — Digipace Technologies' },
-    { icon: 'MapPinIcon', label: 'Based In', value: 'Surat & Vadodara, India' },
-    { icon: 'LanguageIcon', label: 'Languages', value: 'Gujarati (Native), English, Hindi' },
+    { icon: 'BriefcaseIcon', label: 'Current Role', value: 'Angular Developer — Elpiora Tech Solutions' },
+    { icon: 'MapPinIcon', label: 'Based In', value: 'Surat, India' },
+    { icon: 'LanguageIcon', label: 'Languages', value: 'Gujarati, Hindi, English, German' },
 ];
 
 export default function AboutSection() {
@@ -64,7 +64,7 @@ export default function AboutSection() {
                                 Who I Am
                             </h3>
                             <p className="text-foreground-secondary leading-relaxed text-base">
-                                I am a Bachelor of Computer Applications (BCA) graduate from Veer Narmad South Gujarat University, Surat, India, holding an EQF Level 6 qualification. Born in Surat on 7 December 2004, I have developed a solid foundation in computer programming, software engineering, web technologies, and database management systems.
+                                I am an Indian Angular Developer and Bachelor of Computer Application (BCA) graduate from Veer Narmad South Gujarat University, Surat, India (EQF Level 6). Born in Surat on 07/12/2004, I specialize in building responsive, scalable web applications with Angular, TypeScript, HTML5, and CSS3, backed by robust database and software engineering fundamentals.
                             </p>
                         </div>
 
@@ -74,10 +74,10 @@ export default function AboutSection() {
                                 Professional Journey
                             </h3>
                             <p className="text-foreground-secondary leading-relaxed text-base mb-3">
-                                Currently working as an Angular Developer at Digipace Technologies Pvt. Ltd. (Vadodara, India) since 1 July 2026, developing and maintaining web application features, building responsive user interfaces, integrating REST APIs, debugging, and collaborating to improve code quality.
+                                Currently working as an Angular Developer at <strong className="text-foreground">Elpiora Tech Solutions Pvt. Ltd. – Surat, India</strong> [01/07/2026 – Current], developing responsive web applications, building reusable components and services, implementing Angular routing, form validation, and data binding, and collaborating with team members to deliver technical solutions.
                             </p>
                             <p className="text-foreground-secondary leading-relaxed text-base">
-                                Prior to this, I worked at Tagline Infotech LLP (Surat, India) as an Angular Developer and Angular Developer Intern, building responsive web apps with Angular and TypeScript, designing reusable UI components, and managing version control with Git.
+                                Previously worked at <strong className="text-foreground">Tagline Infotech LLP – Surat, India</strong> as an Angular Developer [01/07/2025 – 30/06/2026] maintaining application UIs and collaborating across teams, and started as an Angular Developer Intern [01/01/2025 – 30/06/2025] mastering frontend development with HTML, CSS, JavaScript, TypeScript, and REST API integration.
                             </p>
                         </div>
 
@@ -87,9 +87,12 @@ export default function AboutSection() {
                                     <Icon name="SparklesIcon" size={18} className="text-primary" />
                                 </div>
                                 <div>
-                                    <p className="text-foreground font-semibold text-lg mb-1.5">Hobbies &amp; Interests</p>
+                                    <p className="text-foreground font-semibold text-lg mb-1.5">Area of Interests &amp; Hobbies</p>
+                                    <p className="text-foreground-secondary leading-relaxed text-base mb-2">
+                                        <strong className="text-foreground">Hobbies:</strong> Listening to music · Playing Badminton · Travelling
+                                    </p>
                                     <p className="text-foreground-secondary leading-relaxed text-base">
-                                        Outside of programming, I enjoy competitive esports and gaming (exploring gaming strategies), travelling (exploring new places and experiencing different cultures), and content creation around gaming and lifestyle.
+                                        <strong className="text-foreground">Area of Interests:</strong> Digital technology &amp; innovation · Data science for business analytics · AI technologies for business development · IT management
                                     </p>
                                 </div>
                             </div>

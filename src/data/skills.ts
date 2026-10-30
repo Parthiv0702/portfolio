@@ -6,84 +6,103 @@ export interface SkillCategory {
     accentColor: string;
 }
 
+// Exact skills in the order managed in the CV:
+// Javascript / CSS / Java / Python / Angular / Typescript / HTML / PHP / React.js / SQL / Next.js / MongoDB / Version Control (Git)
+export const cvSkills: string[] = [
+    'Javascript',
+    'CSS',
+    'Java',
+    'Python',
+    'Angular',
+    'Typescript',
+    'HTML',
+    'PHP',
+    'React.js',
+    'SQL',
+    'Next.js',
+    'MongoDB',
+    'Version Control (Git)',
+];
+
 export const skillCategories: SkillCategory[] = [
     {
         id: 'frontend',
-        category: 'Frontend & Web Development',
+        category: 'Frontend & Frameworks',
         icon: 'ComputerDesktopIcon',
-        skills: [
-            'Angular',
-            'ReactJs',
-            'Next.js',
-            'TypeScript',
-            'JavaScript',
-            'HTML',
-            'CSS',
-            'SCSS',
-            'Web Designing',
-            'Web Programming',
-        ],
+        skills: ['Angular', 'React.js', 'Next.js', 'Typescript', 'Javascript', 'HTML', 'CSS'],
         accentColor: '#06B6D4',
     },
     {
         id: 'programming',
         category: 'Programming Languages',
         icon: 'CodeBracketIcon',
-        skills: [
-            'JavaScript',
-            'TypeScript',
-            'Java (Computer Programming)',
-            'Python (Computer Programming)',
-            'PHP',
-        ],
+        skills: ['Javascript', 'Typescript', 'Java', 'Python', 'PHP'],
         accentColor: '#3B82F6',
-    },
-    {
-        id: 'core-cs',
-        category: 'Core Computer Science',
-        icon: 'CpuChipIcon',
-        skills: [
-            'Data Structures and Algorithms',
-            'Object-Oriented Programming (OOP)',
-            'Computer Programming',
-        ],
-        accentColor: '#8B5CF6',
     },
     {
         id: 'databases',
         category: 'Databases & Systems',
         icon: 'CircleStackIcon',
-        skills: ['SQL', 'MongoDB', 'Database Management Systems'],
+        skills: ['SQL', 'MongoDB'],
         accentColor: '#10B981',
     },
     {
         id: 'tools',
-        category: 'Tools & Version Control',
+        category: 'Version Control & Tools',
         icon: 'WrenchScrewdriverIcon',
-        skills: ['Version Control (Git)', 'Git'],
+        skills: ['Version Control (Git)'],
         accentColor: '#F59E0B',
-    },
-    {
-        id: 'soft-skills',
-        category: 'Soft Skills',
-        icon: 'SparklesIcon',
-        skills: [
-            'Communication',
-            'Problem-Solving',
-            'Think Critically',
-            'Work as a Team',
-            'Adapt to Change',
-            'Time Management',
-        ],
-        accentColor: '#EC4899',
     },
 ];
 
-export const softSkills: string[] = [
-    'Communication',
-    'Problem-Solving',
-    'Think Critically',
-    'Work as a Team',
-    'Adapt to Change',
-    'Time Management',
-];
+export interface LanguageAssessment {
+    language: string;
+    type: 'Mother tongue' | 'Other language';
+    listening?: string;
+    reading?: string;
+    spokenInteraction?: string;
+    spokenProduction?: string;
+    writing?: string;
+}
+
+export const languageSkills: {
+    motherTongues: string[];
+    otherLanguages: LanguageAssessment[];
+} = {
+    motherTongues: ['Gujarati', 'Hindi'],
+    otherLanguages: [
+        {
+            language: 'English',
+            type: 'Other language',
+            listening: 'C1',
+            reading: 'C1',
+            spokenInteraction: 'B2',
+            spokenProduction: 'B2',
+            writing: 'B2',
+        },
+        {
+            language: 'German',
+            type: 'Other language',
+            listening: 'A1',
+            reading: 'A1',
+            spokenInteraction: 'A1',
+            spokenProduction: 'A1',
+            writing: 'A1',
+        },
+    ],
+};
+
+export const interpersonalSkills = {
+    communication: ['Public Speaking', 'Team Leadership', 'Active Listening'],
+    organisational: ['Multitasking Abilities', 'Innovative Workflow Management', 'Time Management'],
+};
+
+export const hobbiesAndInterests = {
+    hobbies: ['Listening to music', 'Playing Badminton', 'Travelling'],
+    areaOfInterests: [
+        'Digital technology & innovation',
+        'Data science for business analytics',
+        'AI technologies for business development',
+        'IT management',
+    ],
+};

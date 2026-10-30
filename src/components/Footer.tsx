@@ -23,7 +23,7 @@ export default function Footer() {
                             <span className="font-bold text-foreground text-sm">Parthiv Jogadiya</span>
                         </div>
                         <p className="text-muted-foreground text-sm leading-relaxed">
-                            Angular Developer · BCA Graduate
+                            Angular Developer · BCA Graduate · Surat, India
                         </p>
                         <div className="flex items-center gap-4 mt-2">
                             <a
@@ -54,24 +54,24 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Right: Nav links */}
+                    {/* Right: Nav links in CV order */}
                     <div className="flex flex-wrap gap-x-8 gap-y-3 lg:gap-x-10">
                         {[
                             { label: 'Home', href: '/' },
                             { label: 'About', href: '/about' },
-                            { label: 'Projects', href: '/projects' },
                             { label: 'Experience', href: '/#experience' },
-                            { label: 'Skills', href: '/#skills' },
                             { label: 'Education', href: '/#education' },
+                            { label: 'Skills', href: '/#skills' },
+                            { label: 'Projects', href: '/projects' },
                             { label: 'CV', href: '/#cv' },
                             { label: 'Contact', href: '/#contact' },
-                        ]?.map((link) => (
+                        ].map((link) => (
                             <Link
-                                key={link?.label}
-                                href={link?.href}
+                                key={link.label}
+                                href={link.href}
                                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200 min-h-[44px] flex items-center"
                             >
-                                {link?.label}
+                                {link.label}
                             </Link>
                         ))}
                     </div>

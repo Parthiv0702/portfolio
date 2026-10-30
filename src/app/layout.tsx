@@ -20,10 +20,10 @@ export const metadata: Metadata = {
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
     title: 'Parthiv Jogadiya — Angular Developer & BCA Graduate',
     description:
-        'Portfolio of Parthiv Jogadiya — Angular Developer at Digipace Technologies Pvt. Ltd., formerly at Tagline Infotech LLP, and BCA graduate from Veer Narmad South Gujarat University.',
+        'Portfolio of Parthiv Jogadiya — Angular Developer at Elpiora Tech Solutions Pvt. Ltd., formerly at Tagline Infotech LLP, and BCA graduate from Veer Narmad South Gujarat University.',
     openGraph: {
         title: 'Parthiv Jogadiya — Angular Developer',
-        description: 'Angular Developer at Digipace Technologies and BCA graduate.',
+        description: 'Angular Developer at Elpiora Tech Solutions Pvt. Ltd. and BCA graduate.',
         images: [{ url: '/assets/images/app_logo.jpg', width: 1200, height: 630 }],
     },
     icons: {

@@ -134,12 +134,12 @@ export default function ProjectsPageContent() {
                         <Icon name="ChevronRightIcon" size={13} className="text-muted-foreground" />
                         <span className="text-foreground text-sm font-medium">Projects</span>
                     </div>
-                    <span className="section-label">Portfolio</span>
+                    <span className="section-label">Projects</span>
                     <h1 className="text-section-heading text-foreground mt-2">
-                        All <span className="text-gradient-blue">Projects</span>
+                        Academic and Technical <span className="text-gradient-blue">Projects</span>
                     </h1>
-                    <p className="text-muted-foreground mt-3 max-w-xl text-sm sm:text-base">
-                        A collection of software development projects built with Angular, Next.js, TypeScript, and related technologies, as documented in my CV.
+                    <p className="text-muted-foreground mt-3 max-w-2xl text-sm sm:text-base">
+                        Academic and technical projects managed in exact CV order and description, built with React.js, Angular, Python (Flask), TypeScript, and modern database stacks.
                     </p>
                 </div>
 
@@ -158,13 +158,7 @@ export default function ProjectsPageContent() {
                     ))}
                 </div>
 
-                {/* Projects Grid
-          BENTO GRID AUDIT (for "All" filter state):
-          Array has 4 cards: [task-management-app, ecommerce-frontend, data-dashboard, portfolio-website]
-          Row 1 (lg grid-cols-2): [col-1: task-management-app cs-1] [col-2: ecommerce-frontend cs-1]
-          Row 2 (lg grid-cols-2): [col-1: data-dashboard cs-1] [col-2: portfolio-website cs-1]
-          Placed 4/4 cards ✓
-        */}
+                {/* Projects Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {filtered.map((project, index) => (
                         <div
@@ -178,11 +172,9 @@ export default function ProjectsPageContent() {
                                     <Icon name="FolderOpenIcon" size={22} className="text-primary" />
                                 </div>
                                 <div className="flex items-center gap-2 flex-wrap justify-end">
-                                    {project.featured && (
-                                        <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-accent/10 text-accent border border-accent/20">
-                                            Featured
-                                        </span>
-                                    )}
+                                    <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-accent/10 text-accent border border-accent/20">
+                                        #{index + 1}
+                                    </span>
                                     <span className="text-muted-foreground text-xs font-medium px-2.5 py-0.5 rounded-full bg-white/5 border border-white/5">
                                         {project.category}
                                     </span>

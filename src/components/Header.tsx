@@ -17,14 +17,14 @@ const navItems: NavItem[] = [
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
     { label: 'Experience', href: '/#experience', isAnchor: true, anchorId: 'experience' },
-    { label: 'Projects', href: '/projects' },
-    { label: 'Skills', href: '/#skills', isAnchor: true, anchorId: 'skills' },
     { label: 'Education', href: '/#education', isAnchor: true, anchorId: 'education' },
+    { label: 'Skills', href: '/#skills', isAnchor: true, anchorId: 'skills' },
+    { label: 'Projects', href: '/#projects', isAnchor: true, anchorId: 'projects' },
     { label: 'CV', href: '/#cv', isAnchor: true, anchorId: 'cv' },
     { label: 'Contact', href: '/#contact', isAnchor: true, anchorId: 'contact' },
 ];
 
-const HOME_SECTIONS = ['hero', 'about', 'experience', 'projects', 'skills', 'education', 'cv', 'contact'];
+const HOME_SECTIONS = ['hero', 'about', 'experience', 'education', 'skills', 'projects', 'cv', 'contact'];
 
 export default function Header() {
     const [scrolled, setScrolled] = useState(false);
@@ -147,7 +147,7 @@ export default function Header() {
         if (item.href === '/about') {
             return pathname === '/about' || (pathname === '/' && activeSection === 'about');
         }
-        if (item.href === '/projects') {
+        if (item.anchorId === 'projects') {
             return pathname === '/projects' || (pathname === '/' && activeSection === 'projects');
         }
         if (item.isAnchor && item.anchorId) {

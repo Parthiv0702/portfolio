@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import Icon from '@/components/ui/AppIcon';
+import { cvSkills } from '@/data/skills';
 
 export default function HeroSection() {
     const blobRef1 = useRef<HTMLDivElement>(null);
@@ -84,7 +85,7 @@ export default function HeroSection() {
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8 animate-fade-in-up stagger-1">
                     <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                    <span className="section-label">Angular Developer · Surat &amp; Vadodara, India</span>
+                    <span className="section-label">Angular Developer · Surat, India</span>
                 </div>
 
                 {/* Headline */}
@@ -100,7 +101,7 @@ export default function HeroSection() {
 
                 {/* Description */}
                 <p className="max-w-2xl mx-auto text-base sm:text-lg text-muted-foreground leading-relaxed mb-10 animate-fade-in-up stagger-4">
-                    Angular Developer at Digipace Technologies Pvt. Ltd. and BCA graduate from Veer Narmad South Gujarat University. Experienced in developing responsive web applications, reusable UI components, and REST API integrations with prior development experience at Tagline Infotech LLP.
+                    Angular Developer at Elpiora Tech Solutions Pvt. Ltd. and BCA graduate from Veer Narmad South Gujarat University. Experienced in developing responsive web applications, reusable UI components, and REST API integrations with prior development experience at Tagline Infotech LLP.
                 </p>
 
                 {/* CTAs */}
@@ -129,9 +130,9 @@ export default function HeroSection() {
                     </button>
                 </div>
 
-                {/* Tech Stack Row */}
+                {/* Tech Stack Row - in exact order from CV */}
                 <div className="mt-14 flex flex-wrap items-center justify-center gap-2 animate-fade-in-up stagger-6">
-                    {['Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'SCSS', 'ReactJs', 'Next.js', 'Git'].map((tech) => (
+                    {cvSkills.map((tech) => (
                         <span key={tech} className="tech-badge">
                             {tech}
                         </span>

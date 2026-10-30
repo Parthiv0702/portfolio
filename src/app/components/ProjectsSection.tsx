@@ -140,9 +140,9 @@ export default function ProjectsSection() {
             <div className="max-w-7xl mx-auto">
                 <div className="scroll-reveal-hidden flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
                     <div>
-                        <span className="section-label">Portfolio</span>
+                        <span className="section-label">Projects</span>
                         <h2 id="projects-heading" className="text-section-heading text-foreground mt-2">
-                            Selected <span className="text-gradient-blue">Projects</span>
+                            Academic and Technical <span className="text-gradient-blue">Projects</span>
                         </h2>
                     </div>
                     <Link
@@ -154,12 +154,6 @@ export default function ProjectsSection() {
                     </Link>
                 </div>
 
-                {/* BENTO GRID AUDIT:
-          Array has 4 cards: [task-management-app, ecommerce-frontend, data-dashboard, portfolio-website]
-          Row 1 (lg): [col-1: task-management-app cs-1] [col-2: ecommerce-frontend cs-1]
-          Row 2 (lg): [col-1: data-dashboard cs-1] [col-2: portfolio-website cs-1]
-          Placed 4/4 cards ✓
-        */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {projects.map((project, index) => (
                         <div
@@ -173,11 +167,9 @@ export default function ProjectsSection() {
                                     <Icon name="FolderOpenIcon" size={20} className="text-primary" />
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    {project.featured && (
-                                        <span className="px-2 py-0.5 rounded-full text-xs font-semibold bg-accent/10 text-accent border border-accent/20">
-                                            Featured
-                                        </span>
-                                    )}
+                                    <span className="px-2 py-0.5 rounded-full text-xs font-semibold bg-accent/10 text-accent border border-accent/20">
+                                        #{index + 1}
+                                    </span>
                                     <span className="text-muted-foreground text-xs">{project.category}</span>
                                 </div>
                             </div>
